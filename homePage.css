@@ -4,12 +4,12 @@
 	box-sizing: border-box;
 }
 
-nav {
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #202020;
-    border-bottom: 5px solid #8AEAFF;
+    border-bottom: 5px solid #ff3e68;
     text-align: center;
     height: 25em
 }
@@ -39,21 +39,68 @@ nav {
     width: 50%;
     float: right;
     text-align: center;
-    margin: 20px;
+    margin-right: 5em;
 }
 
 #aboutMe h1 {
-    color: #8AEAFF
+    color: #ff3e68
 }
 
 main {
-    padding: 2em;
+    padding: 3em 0 3em 0;
     background-color: #222222;
 }
 
-main h1 {
-    color: #8AEAFF;
+main .sectionTitle {
+    color: #ff3e68;
     text-align: center;
     font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 35px;
+    font-size: 45px;
+    padding-bottom: 1em;
+    border-bottom: 5px solid #ff3e68;
+}
+
+main .projects ul {
+    list-style: none;
+    margin: 5%;
+}
+
+main .projects ul li {
+    border-radius: 20px;
+    background-color: #3a3a3a;
+    height: 35em;
+}
+
+.BikingBuds {
+    margin-top: 2em;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.BikingBuds img {
+    width: 40%;
+    margin-left: 5%;
+    background-color: white;
+}
+
+.BikingBuds .rightSide {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.BikingBuds .rightSide h1 {
+    color: #8AEAFF;
+}
+.BikingBuds h1 {
+    font-family: 'Baumans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.BikingBuds h1 span {
+    color: #7Bff91;
 }
