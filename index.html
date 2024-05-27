@@ -75,8 +75,6 @@
 			<div class="container d-flex mt-5 flex-column justify-content-center">
 				<h1 class="text-center container">Saahil Sukhija</h1>
 				<h2 class="text-center mt-3 mx-5 px-5">
-					Hi! I'm a freshman who loves to code. Currently, all my coding time is either spent on app development or teaching Java to middle
-					schoolers. Aside from coding, I'm interested in guitar, badminton, and basketball.
 				</h2>
 				<span class="contact-button m-auto">
 					<a class="btn rounded-pill btn-outline-primary px-4" href="mailto:saahilsukhija@gmail.com" target="_blank">Contact</a>
@@ -90,6 +88,7 @@
 		<script>
 			// Function to get query parameters from the URL
 			function getQueryParams() {
+				console.log("hi2")
 				const params = {};
 				const queryString = window.location.search.substring(1);
 				const queries = queryString.split("&");
@@ -102,6 +101,7 @@
 	
 			// Function to perform the redirect
 			function performRedirect() {
+				console.log("hi")
 				const params = getQueryParams();
 				if (params.id) {
 					const customUrl = `bikingbuds://joingroup?id=${params.id}`;
@@ -111,8 +111,7 @@
 	
 			// Set up the click event handler
 			document.addEventListener("DOMContentLoaded", function () {
-				const textElement = document.getElementById("redirectText");
-				textElement.addEventListener("click", performRedirect);
+				performRedirect()
 			});
 		</script>
 		<script src="navbar.js"></script>
