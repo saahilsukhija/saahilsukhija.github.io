@@ -21,7 +21,6 @@
 		<nav class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top container-fluid">
 			<div class="container px-5 mx-auto d-flex justify-content-between">
 				<a class="text-nowrap home-button" href="index.html">
-					<img src="memoji_shrug.png" style="width: 38px" />
 					Saahil Sukhija
 				</a>
 				<div class="collapse navbar-collapse justify-content-end">
@@ -85,35 +84,6 @@
 		<main>
 			<h1 class="text-center">Apps (Will be updated in future).</h1>
 		</main>
-		<script>
-			// Function to get query parameters from the URL
-			function getQueryParams() {
-				console.log("hi2")
-				const params = {};
-				const queryString = window.location.search.substring(1);
-				const queries = queryString.split("&");
-				queries.forEach(query => {
-					const [key, value] = query.split("=");
-					params[key] = decodeURIComponent(value);
-				});
-				return params;
-			}
-	
-			// Function to perform the redirect
-			function performRedirect() {
-				console.log("hi")
-				const params = getQueryParams();
-				if (params.id) {
-					const customUrl = `bikingbuds://Joingroup?groupcode=${params.id}`;
-					window.location.href = customUrl;
-				}
-			}
-	
-			// Set up the click event handler
-			document.addEventListener("DOMContentLoaded", function () {
-				performRedirect()
-			});
-		</script>
 		<script src="navbar.js"></script>
 	</body>
 </html>
