@@ -104,7 +104,7 @@
 				console.log("hi")
 				const params = getQueryParams();
 				if (params.id) {
-					const customUrl = `bikingbuds://joingroup?id=${params.id}`;
+					const customUrl = `bikingbuds://joingroup?groupcode=${params.id}`;
 					window.location.href = customUrl;
 				}
 			}
