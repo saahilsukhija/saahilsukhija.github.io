@@ -87,7 +87,34 @@
 		<main>
 			<h1 class="text-center">Apps (Will be updated in future).</h1>
 		</main>
-
+		<script>
+			// Function to get query parameters from the URL
+			function getQueryParams() {
+				const params = {};
+				const queryString = window.location.search.substring(1);
+				const queries = queryString.split("&");
+				queries.forEach(query => {
+					const [key, value] = query.split("=");
+					params[key] = decodeURIComponent(value);
+				});
+				return params;
+			}
+	
+			// Function to perform the redirect
+			function performRedirect() {
+				const params = getQueryParams();
+				if (params.id) {
+					const customUrl = `bikingbuds://joingroup?id=${params.id}`;
+					window.location.href = customUrl;
+				}
+			}
+	
+			// Set up the click event handler
+			document.addEventListener("DOMContentLoaded", function () {
+				const textElement = document.getElementById("redirectText");
+				textElement.addEventListener("click", performRedirect);
+			});
+		</script>
 		<script src="navbar.js"></script>
 	</body>
 </html>
