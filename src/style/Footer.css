@@ -1,9 +1,10 @@
 .footer {
   background-color: #000000;
   color: #ffffff;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
-  font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
   bottom: 0px;
   width: 100%;
 }

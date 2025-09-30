@@ -1,31 +1,33 @@
 #about {
-    width: 100%;
-    background-color: rgb(249 250 251);
-    padding-bottom: 5rem; 
+  width: 100%;
+  background-color: rgb(249 250 251);
+  padding-bottom: 5rem;
 }
 
 #about h1 {
-    color: black;
-    font-family: 'Proxima Nova', 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
+  color: black;
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 #about h3 {
-    color: black;
-    font-family: 'Proxima Nova', 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    margin: 2% 10%;
+  color: black;
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 2% 10%;
 }
 
 ul {
-    list-style: none;
-    color: black;
+  list-style: none;
+  color: black;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-ul span{
-    list-style: none;
-    color: black;
-    font-weight: 700;
+ul span {
+  list-style: none;
+  color: black;
+  font-weight: 700;
 }
