@@ -1,8 +1,28 @@
 import "../style/ProjectsView.css";
 import { FaGithub } from "react-icons/fa";
 import { SiApple, SiGoogleplay } from "react-icons/si";
+import { useEffect } from "react";
 
 function ProjectsView() {
+  useEffect(() => {
+    const cards = document.querySelectorAll(".project-card");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // animate once
+          }
+        });
+      },
+      { threshold: 0.15 } // triggers when 15% is visible
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div
       className="projects-view"
@@ -23,35 +43,10 @@ function ProjectsView() {
         />
         <ProjectCard
           project={{
-            name: "BikingBuds",
-            description: "A social biking app with 15k+ users across 9 cities.",
-            image: "/bikingbuds-logotext.png",
+            name: "Springing Maple",
+            description: "An app made for Abbott Capital LLC",
+            image: "/springingmaple-logotext.png",
             github: "https://github.com/saahilsukhija/bikingbuds",
-            appStore: "https://apps.apple.com/us/app/bikingbuds/id1597045542",
-            playStore:
-              "https://play.google.com/store/apps/details?id=com.SaahilSukhija.BikingBuds&hl=en_US",
-          }}
-        />
-        <ProjectCard
-          project={{
-            name: "BikingBuds",
-            description: "A social biking app with 15k+ users across 9 cities.",
-            image: "/bikingbuds-logotext.png",
-            github: "https://github.com/saahilsukhija/bikingbuds",
-            appStore: "https://apps.apple.com/us/app/bikingbuds/id1597045542",
-            playStore:
-              "https://play.google.com/store/apps/details?id=com.SaahilSukhija.BikingBuds&hl=en_US",
-          }}
-        />
-        <ProjectCard
-          project={{
-            name: "BikingBuds",
-            description: "A social biking app with 15k+ users across 9 cities.",
-            image: "/bikingbuds-logotext.png",
-            github: "https://github.com/saahilsukhija/bikingbuds",
-            appStore: "https://apps.apple.com/us/app/bikingbuds/id1597045542",
-            playStore:
-              "https://play.google.com/store/apps/details?id=com.SaahilSukhija.BikingBuds&hl=en_US",
           }}
         />
       </div>

@@ -120,6 +120,7 @@
 @media screen and (max-width: 800px) {
   .title-container .content {
     flex-direction: column;
+    margin-top: -2rem;
   }
 
   .content img {
