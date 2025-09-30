@@ -120,7 +120,12 @@
 @media screen and (max-width: 800px) {
   .title-container .content {
     flex-direction: column;
-    margin-top: -2rem;
+    margin-top: -1rem;
+  }
+
+  .title-container-name {
+    font-weight: 700;
+    font-size: 2.3rem;
   }
 
   .content img {
