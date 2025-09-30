@@ -5,7 +5,7 @@
 
 .projects-view h1 {
   color: black;
-  font-family: 'Proxima Nova', 'Poppins', sans-serif;
+  font-family: 'Proxima Nova', 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -70,7 +70,7 @@
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   color: #222;
-  font-family: 'Proxima Nova', 'Poppins', sans-serif;
+  font-family: 'Proxima Nova', 'Montserrat', sans-serif;
 }
 
 .project-description {
