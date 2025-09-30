@@ -1,23 +1,41 @@
 import React from "react";
 import "../style/GetInTouchView.css";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 function GetInTouchView() {
   return (
     <div className="get-in-touch-view">
       <h1>Get In Touch</h1>
       <p>
-        Interested in collaborating, learning more, or just want to say hi? 
-        Drop me a message and I’ll get back to you as soon as possible.
+        Feel free to reach out for collaborations or just a friendly hello 👋
       </p>
-      <a href="mailto:saahil@example.com" className="contact-btn">
-        Email Me
-      </a>
-      <a href="https://linkedin.com/in/saahilsukhija" className="contact-btn">
-        LinkedIn
-      </a>
-      <a href="https://github.com/saahilsukhija" className="contact-btn">
-        GitHub
-      </a>
+      <div className="contact-buttons">
+        <a
+          href="mailto:sukhija@berkeley.edu"
+          className="contact-btn email"
+          title="Email Me"
+        >
+          <FaEnvelope />
+        </a>
+        <a
+          href="https://linkedin.com/in/saahilsukhija"
+          className="contact-btn linkedin"
+          title="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/saahilsukhija"
+          className="contact-btn github"
+          title="GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+      </div>
     </div>
   );
 }

@@ -1,39 +1,45 @@
 .get-in-touch-view {
-    margin: 5rem;
-    text-align: center;
-    font-family: "Proxima Nova", sans-serif;
-  }
-  
-  .get-in-touch-view h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  
-  .get-in-touch-view p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 2rem;
-  }
-  
-  .contact-btn {
-    display: inline-block;
-    margin: 0 0.5rem 0.5rem 0.5rem;
-    padding: 0.6rem 1rem;
-    background-color: #007aff;
-    color: white;
-    font-weight: 600;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .contact-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  }
-  
-  .contact-btn:active {
-    transform: scale(0.97);
-  }
-  
+  margin: 2rem auto;
+  color: black;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 0rem;
+}
+
+.get-in-touch-view h1 {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.contact-btn {
+  font-size: 2rem;
+  color: #222;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.linkedin:hover {
+  transform: scale(1.2);
+  color: #0073b1; /* blue for LinkedIn, Email/GitHub can inherit or you can style separately */
+}
+
+.email:hover {
+  transform: scale(1.2);
+  color: #560f0f;
+}
+
+.github:hover {
+  transform: scale(1.2);
+  color: rgb(50, 0, 137);
+}
