@@ -1,0 +1,31 @@
+#about {
+    width: 100%;
+    background-color: rgb(249 250 251);
+    padding-bottom: 5rem; 
+}
+
+#about h1 {
+    color: black;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#about h3 {
+    color: black;
+    font-family: 'Proxima Nova', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 2% 10%;
+}
+
+ul {
+    list-style: none;
+    color: black;
+}
+
+ul span{
+    list-style: none;
+    color: black;
+    font-weight: 700;
+}

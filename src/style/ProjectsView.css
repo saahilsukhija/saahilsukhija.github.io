@@ -1,0 +1,143 @@
+.projects-view {
+  margin: 5rem;
+  color: black;
+}
+
+.projects-view h1 {
+  color: black;
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.projects-view-collection {
+  display: grid;
+  grid-template-columns: 1fr; /* default: 1 column */
+  gap: 2rem; /* space between cards */
+  width: 100%;
+  max-width: 1200px; /* optional: prevent stretching too wide */
+  margin: 2rem auto; /* center horizontally */
+}
+/* Medium screens: 2 columns */
+@media (min-width: 800px) {
+  .projects-view-collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Wide screens: 3 columns */
+@media (min-width: 1100px) {
+  .projects-view-collection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.415);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4155);
+}
+
+.project-image {
+  border-radius: 20%;
+}
+
+/* image at top */
+.project-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* text content */
+.project-content {
+  padding: 1rem 1.2rem;
+}
+
+.project-card .project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #222;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.project-links {
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.link-btn {
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform-origin: center center;
+  will-change: transform;
+  text-decoration: none;
+  box-shadow: 0 3px 5px rgba(49, 49, 49, 0.3);
+  margin: 0px 5px;
+}
+
+/* Hover & active scale effect for all buttons */
+.link-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(49, 49, 49, 0.3);
+}
+
+.link-btn:active {
+  transform: scale(0.97);
+}
+
+/* Specific colors */
+.github-btn {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 1px 3px rgb(49, 49, 49);
+}
+
+.apple-btn {
+  background-color: white;
+  color: black;
+}
+
+.google-btn {
+  background-color: #267a3d;
+  color: #fff;
+}
+
+/* Icons */
+.link-btn .store-icon,
+.link-btn .github-icon {
+  font-size: 1.3rem;
+  color: inherit; /* inherits text color of button */
+}

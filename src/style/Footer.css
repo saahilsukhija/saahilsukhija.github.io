@@ -1,0 +1,29 @@
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+    font-family: "Proxima Nova", sans-serif;
+  }
+  
+  .footer p {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #007aff;
+  }
+  

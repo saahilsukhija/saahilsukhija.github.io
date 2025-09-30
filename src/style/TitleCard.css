@@ -1,0 +1,184 @@
+.title-container {
+    position: relative; /* make children absolute positioning work */
+    background-color: rgb(249 250 251);
+    width: 100%;
+    min-height: screen;
+    min-width: screen;
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+.title-container .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: screen;
+    color: black;
+
+    /* Animation */
+    opacity: 0; /* start invisible */
+    transform: translateY(20px); /* start slightly below */
+    animation: fadeSlideIn 0.7s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.title-container-name {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: left;
+    font-family: 'Proxima Nova';
+}
+
+.title-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.title-container-name span {
+    color: #165DFB;
+    font-family: 'Proxima Nova';
+}
+
+.title-container-subtitle {
+    color: #718096;
+    margin-top: -0.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: left;
+
+    min-height: 2rem; /* prevents layout shift while typing */
+    white-space: nowrap;
+    font-family: 'Proxima Nova';
+}
+
+.content img {
+    border-radius: 50%;
+    width: 12rem;
+    margin: 3rem;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+.cursor {
+    display: inline-block;
+    margin-left: 0px;
+    width: 1ch;
+    animation: blink 2s step-end infinite;
+    color: #00126d;
+    font-size: 1.2rem;
+}
+
+.title-container-buttons {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: baseline;
+    width: 100%;
+
+}
+
+.title-container-buttons button {
+    width: 40%;
+    box-shadow: 0 1px 3px rgb(49, 49, 49);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth animation */
+}
+
+.title-container-buttons button:hover {
+    transform: scale(1.05); /* slightly bigger */
+    box-shadow: 0 4px 8px rgba(49, 49, 49, 0.3); /* lift effect */
+}
+
+#resume {
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#projects {
+    outline: none;
+}
+
+#resume:hover {
+    background-color: rgb(237, 242, 255);
+
+}
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+  }
+
+@media screen and (max-width: 800px) {
+  
+    .title-container .content {
+        flex-direction: column;
+    }
+
+    .content img {
+        margin: 1rem 0 1rem 0;
+        width: 12rem
+    }
+
+    .title-container-subtitle {
+        text-align: center;
+    }
+
+    .title-container-text {
+        align-items: center;
+    }
+
+    .title-container-buttons {
+        justify-content: center;
+    }
+  }
+
+  @keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    opacity: 0;
+    transition: opacity 0.45s ease, transform 0.45s ease;
+    pointer-events: auto;
+  }
+  
+  .scroll-down.visible {
+    opacity: 1; /* fade in when loaded */
+  }
+
+  .scroll-down.scrolled {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+    pointer-events: none;
+  }
+  
+  .arrow-svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #051639;
+    animation: bounceFade 2s infinite;
+    cursor: pointer;
+  }
+  
+  @keyframes bounceFade {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    25% { transform: translateY(10px); opacity: 0.6; }
+    50% { transform: translateY(5px); opacity: 0.8; }
+    75% { transform: translateY(10px); opacity: 0.6; }
+  }
+  html {
+    scroll-behavior: smooth;
+  }

@@ -1,0 +1,69 @@
+.experience-view {
+    margin: 5rem;
+    color: black;
+  }
+  
+  .experience-view h1 {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .experience-collection {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  /* Medium screens: 2 columns */
+  @media (min-width: 600px) {
+    .experience-collection {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Wide screens: 3 columns */
+  @media (min-width: 900px) {
+    .experience-collection {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .experience-card {
+    background-color: #fff;
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  }
+  
+  .exp-role {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+  
+  .exp-company {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 0.3rem;
+  }
+  
+  .exp-duration {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+  }
+  
+  .exp-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  

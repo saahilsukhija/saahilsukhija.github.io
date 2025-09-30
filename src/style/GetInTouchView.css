@@ -1,0 +1,39 @@
+.get-in-touch-view {
+    margin: 5rem;
+    text-align: center;
+    font-family: "Proxima Nova", sans-serif;
+  }
+  
+  .get-in-touch-view h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .get-in-touch-view p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-btn {
+    display: inline-block;
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    padding: 0.6rem 1rem;
+    background-color: #007aff;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .contact-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  .contact-btn:active {
+    transform: scale(0.97);
+  }
+  
