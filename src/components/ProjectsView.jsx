@@ -4,7 +4,10 @@ import { SiApple, SiGoogleplay } from "react-icons/si";
 
 function ProjectsView() {
   return (
-    <div className="projects-view">
+    <div
+      className="projects-view"
+      id="projects-view"
+    >
       <h1>Projects</h1>
       <div className="projects-view-collection">
         <ProjectCard

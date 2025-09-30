@@ -71,7 +71,17 @@ function TitleCard() {
             <span className="cursor">_</span>
           </h3>
           <div className="title-container-buttons">
-            <button id="projects">Projects</button>
+            <button
+              id="projects"
+              onClick={() => {
+                const element = document.getElementById("projects-view");
+                if (element) {
+                  element.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              Projects
+            </button>
             <button id="resume">Resume</button>
           </div>
         </div>
