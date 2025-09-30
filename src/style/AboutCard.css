@@ -24,6 +24,15 @@ ul {
   color: black;
   margin-left: 20px;
   margin-right: 20px;
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+}
+
+li {
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
+}
+
+li span {
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
 }
 
 ul span {

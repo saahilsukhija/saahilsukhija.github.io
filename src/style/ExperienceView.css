@@ -8,11 +8,11 @@
 }
 
 .experience-view h1 {
-    font-family: 'Proxima Nova', 'Montserrat', sans-serif;
+  font-family: "Proxima Nova", "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
