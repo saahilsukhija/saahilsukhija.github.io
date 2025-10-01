@@ -46,7 +46,9 @@ function ProjectsView() {
             name: "Springing Maple",
             description: "An app made for Abbott Capital LLC",
             image: "/springingmaple-logotext.png",
-            github: "https://github.com/saahilsukhija/bikingbuds",
+            github: "https://github.com/saahilsukhija/Springing-Maple",
+            appStore:
+              "https://apps.apple.com/us/app/springing-maple/id6482982407",
           }}
         />
       </div>

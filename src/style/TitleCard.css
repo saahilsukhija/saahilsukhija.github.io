@@ -120,7 +120,6 @@
 @media screen and (max-width: 800px) {
   .title-container .content {
     flex-direction: column;
-    margin-top: -1rem;
   }
 
   .title-container-name {
@@ -145,6 +144,12 @@
   .title-container-buttons {
     justify-content: center;
     width: 120%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-container .content {
+    margin-top: -1rem;
   }
 }
 
