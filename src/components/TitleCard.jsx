@@ -82,7 +82,7 @@ function TitleCard() {
             >
               Projects
             </button>
-            <button id="resume">Resume</button>
+            <button id="resume"  onClick={() => window.open("/resume.pdf", "_blank")} >Resume</button>
           </div>
         </div>
       </div>
